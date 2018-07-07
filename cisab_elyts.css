@@ -1,0 +1,212 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	margin:0;	
+}
+.content a:hover{
+	color: green;
+}
+/*Header*/
+.header{
+	font-size:6vw;
+	margin:0;
+	padding:40px 0px 0px 10px;
+	text-align:left;
+	background:linear-gradient(to right,#ff00ff 1% ,#ff008c,#ff0073 ,#ff0066 ,red );
+	color:White;
+	font-family:'Aclonica';
+	border:0;
+}
+.header small{
+	font-size:3vw;
+}
+
+/*Search bar*/
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+form.example button:hover {
+    background: #0b7dda;
+}
+
+/*Navigation bar*/
+.topnav{
+	overflow:hidden;
+	background-color:#292929;
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;
+	z-index:99;
+}
+.topnav a{
+	float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+	font-family:Aldrich;
+    font-size:20px;
+}
+.topnav a:hover {
+    	background-color: #fff;
+    	color: black;
+}
+/*Content area*/
+.content{	
+	left:20px;
+	background-color:#fff;
+	width:97%;
+	left:20px;
+	margin:1.5vw;
+	padding:1.5vw;
+}
+.content a{
+	text-decoration:none;
+	color:black;
+}
+.row:after ,form.example::after{	
+    	content: "";
+    	display: table;
+    	clear: both;
+}
+/*Footer*/
+.footer{
+	position:relative;
+	margin:0;
+	padding:40px 0px 40px 10px;
+	text-align:center;
+	background:linear-gradient(to right,#ff00ff 1% ,#ff008c,#ff0073 ,#ff0066 ,red );
+	color:White;
+	font-family:'Aclonica';
+	border:0;	
+}
+.footer a{
+	color:white;
+	text-decoration:none;
+	display:block;
+}
+/*Back to top*/
+.back_to_top{
+	position:absolute;
+	width:100%;
+	padding:15px 0 10px 0;	
+	margin:0;	
+	top:0;
+	left:0;	
+	background-color:#292929;
+	font-family:Aldrich;
+}
+.back_to_top a{
+	text-decoration:none;
+	color:#fff;
+}
+
+/*pic container*/
+.mySlides {display: none}
+img {vertical-align: middle;width:100%;}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top:20px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/*watch image container*/
+.flex-container {
+  	display: flex;
+  	justify-content: space-around;  	
+	flex-wrap: wrap;
+}
+.flex-container  div {
+	height:300px;
+  	width: 230px;
+  	margin: 20px;
+	border:2px solid black; 
+}
+/*ipads*/
+@media screen and (max-width: 767px){   
+	.flex-container  div{
+    	height:200px;
+  		width: 154px;
+  		margin: 10px;
+		border:1px solid black;
+    }
+}
+/*Mobile phones*/
+@media screen and (max-width: 479px){
+	.topnav{
+    	position:static;
+    }
+	.topnav a{
+		float:none;
+		width:100%;
+	}
+    .header{
+   		font-size:25px;	
+   	}
+    .header small{
+       	font-size:12px;
+    }
+    .flex-container  div{
+    	height:100px;
+  		width: 77px;
+  		margin: 10px;
+		border:1px solid black;
+    }
+	.prev, .next,{font-size: 11px}
+}
